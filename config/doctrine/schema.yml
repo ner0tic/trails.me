@@ -1,0 +1,34 @@
+map:
+  actAs:
+    Timestampable: ~
+    Sluggable:
+      fields: [name]
+  columns:
+    name:
+      type: string
+      notnull: true
+    file:
+      type: string
+      notnull:true
+mountain:
+  actAs:
+    Timestampable: ~
+    Sluggable:
+      fields: [name]
+  columns:
+    name:
+      type: string
+      notnull: true
+    elevation:
+      type: float
+      notnull: true
+    latitude:
+      type: float
+      notnull: true
+    longitude:
+      type: float
+      notnull: true
+    range:
+      type: string
+    rank:
+      type: integer
